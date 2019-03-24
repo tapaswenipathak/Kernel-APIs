@@ -40,3 +40,73 @@ int audit_list_rules_send (audit_list_rules_sendstruct sk_buff * request_skb,		i
 int parent_len (parent_lenconst char * path);
 int audit_compare_dname_path (audit_compare_dname_pathconst char * dname, const char * path,int parentlen);
 
+int audit_alloc(struct task_struct *tsk)
+{
+	struct audit_context *context;
+	enum audit_state     state;
+	char *key = NULL;
+
+	if (likely(!audit_ever_enabled))
+		return 0; /* Return if not auditing. */
+
+	state = audit_filter_task(tsk, &key);
+	if (state == AUDIT_DISABLED) {
+		clear_tsk_thread_flag(tsk, TIF_SYSCALL_AUDIT);
+		return 0;
+	}
+
+	if (!(context = audit_alloc_context(state))) {
+		kfree(key);
+		audit_log_lost("out of memory in audit_alloc");
+		return -ENOMEM;
+	}
+	context->filterkey = key;
+
+	audit_set_context(tsk, context);
+	set_tsk_thread_flag(tsk, TIF_SYSCALL_AUDIT);
+	return 0;
+}
+
+static inline void audit_free_context(struct audit_context *context)
+{
+	audit_free_names(context);
+	unroll_tree_refs(context, NULL, 0);
+	free_tree_refs(context);
+	audit_free_aux(context);
+	kfree(context->filterkey);
+	kfree(context->sockaddr);
+	audit_proctitle_free(context);
+	kfree(context);
+}
+
+static int audit_log_pid_context(struct audit_context *context, pid_t pid,
+				 kuid_t auid, kuid_t uid, unsigned int sessionid,
+				 u32 sid, char *comm)
+{
+	struct audit_buffer *ab;
+	char *ctx = NULL;
+	u32 len;
+	int rc = 0;
+
+	ab = audit_log_start(context, GFP_KERNEL, AUDIT_OBJ_PID);
+	if (!ab)
+		return rc;
+
+	audit_log_format(ab, "opid=%d oauid=%d ouid=%d oses=%d", pid,
+			 from_kuid(&init_user_ns, auid),
+			 from_kuid(&init_user_ns, uid), sessionid);
+	if (sid) {
+		if (security_secid_to_secctx(sid, &ctx, &len)) {
+			audit_log_format(ab, " obj=(none)");
+			rc = 1;
+		} else {
+			audit_log_format(ab, " obj=%s", ctx);
+			security_release_secctx(ctx, len);
+		}
+	}
+	audit_log_format(ab, " ocomm=");
+	audit_log_untrustedstring(ab, comm);
+	audit_log_end(ab);
+
+	return rc;
+}
