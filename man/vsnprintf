@@ -1,0 +1,17 @@
+.\" Manpage for vsnprintf.
+.\" Contact tapaswenipathak@gmail.com to correct errors or typos.
+.TH man 8 "April 2017" "1.0" "vsnprintf man page"
+.SH NAME
+vsnprintf \- Kernel string APIs
+.SH SYNOPSIS
+vsnprintf - continue
+.SH DESCRIPTION
+man vsnprintf
+#include <string.h>
+.SH OPTIONS
+.SH SEE ALSO
+list*
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Tapasweni Pathak (tapaswenipathak@gmail.com)

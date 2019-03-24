@@ -1,0 +1,17 @@
+.\" Manpage for list_add_tail.
+.\" Contact tapaswenipathak@gmail.com to correct errors or typos.
+.TH man 8 "April 2017" "1.0" "list_add_tail man page"
+.SH NAME
+list_add_tail \- Kernel API for Doubly Linked Lists
+.SH SYNOPSIS
+list_add_tail - continue
+.SH DESCRIPTION
+Insert a new entry before the specified head. This is useful for implementing queues.
+.SH OPTIONS
+This takes pointers of list_head types (new and head).
+.SH SEE ALSO
+list*
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Tapasweni Pathak (tapaswenipathak@gmail.com)

@@ -1,0 +1,17 @@
+.\" Manpage for snprintf.
+.\" Contact tapaswenipathak@gmail.com to correct errors or typos.
+.TH man 8 "April 2017" "1.0" "snprintf man page"
+.SH NAME
+snprintf \- Kernel string APIs
+.SH SYNOPSIS
+snprintf - continue
+.SH DESCRIPTION
+man snprintf
+#include <string.h>
+.SH OPTIONS
+.SH SEE ALSO
+list*
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Tapasweni Pathak (tapaswenipathak@gmail.com)

@@ -1,0 +1,17 @@
+.\" Manpage for list_replace.
+.\" Contact tapaswenipathak@gmail.com to correct errors or typos.
+.TH man 8 "April 2017" "1.0" "list_replace man page"
+.SH NAME
+list_replace \- Kernel API Doubly Linked Lists
+.SH SYNOPSIS
+list_replace - continue
+.SH DESCRIPTION
+Replace prev entry by new one
+.SH OPTIONS
+This takes pointers of list_head types (new and head).
+.SH SEE ALSO
+list*
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Tapasweni Pathak (tapaswenipathak@gmail.com)

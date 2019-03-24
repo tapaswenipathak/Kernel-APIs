@@ -1,0 +1,17 @@
+.\" Manpage for __list_del_entry.
+.\" Contact tapaswenipathak@gmail.com to correct errors or typos.
+.TH man 8 "April 2017" "1.0" "__list_del_entry man page"
+.SH NAME
+__list_del_entry \- Kernel API Doubly Linked Lists
+.SH SYNOPSIS
+__list_del_entry - continue
+.SH DESCRIPTION
+list_empty on entry does not return true after this, the entry is in an undefined state.
+.SH OPTIONS
+This takes pointers of list_head types (entry).
+.SH SEE ALSO
+list*
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Tapasweni Pathak (tapaswenipathak@gmail.com)

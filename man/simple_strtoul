@@ -1,0 +1,19 @@
+.\" Manpage for simple_strtoul.
+.\" Contact tapaswenipathak@gmail.com to correct errors or typos.
+.TH man 8 "April 2017" "1.0" "simple_strtoul man page"
+.SH NAME
+simple_strtoul \- Kernel string APIs
+.SH SYNOPSIS
+simple_strtoul - continue
+.SH DESCRIPTION
+converts a string to an unsigned long
+The header file is string.h
+.SH OPTIONS
+This takes pointers of list_head types (start of string, pointer at the end of the
+parsed string, the number base).
+.SH SEE ALSO
+list*
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Tapasweni Pathak (tapaswenipathak@gmail.com)

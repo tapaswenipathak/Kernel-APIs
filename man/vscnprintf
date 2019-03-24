@@ -1,0 +1,20 @@
+.\" Manpage for vscnprintf.
+.\" Contact tapaswenipathak@gmail.com to correct errors or typos.
+.TH man 8 "April 2017" "1.0" "vscnprintf man page"
+.SH NAME
+vscnprintf \- Kernel string APIs
+.SH SYNOPSIS
+vscnprintf - continue
+.SH DESCRIPTION
+formats a string and place it in a buffer
+#include <string.h>
+The return value is the number of characters which have been written into the buf not including the trailing '\0'. If size is == 0 the function returns 0.
+.SH OPTIONS
+Takes arguments as destination buffer, size of the buffer (including the trailing
+space), the format of the string to use, arguments of the format string.
+.SH SEE ALSO
+list*
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Tapasweni Pathak (tapaswenipathak@gmail.com)

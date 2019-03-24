@@ -1,0 +1,19 @@
+.\" Manpage for simple_strtoll.
+.\" Contact tapaswenipathak@gmail.com to correct errors or typos.
+.TH man 8 "April 2017" "1.0" "simple_strtoll man page"
+.SH NAME
+simple_strtoll \- Kernel string APIs
+.SH SYNOPSIS
+simple_strtoll - continue
+.SH DESCRIPTION
+convert a string to a signed long long.
+The header file is string.h
+.SH OPTIONS
+This takes pointers of list_head types (start of string, pointer at the end of the
+parsed string, the number base).
+.SH SEE ALSO
+list*
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Tapasweni Pathak (tapaswenipathak@gmail.com)
