@@ -1,0 +1,45 @@
+language: c
+dist: xenial
+
+cache:
+  - pip
+  - ccache
+  - directories:
+    - $SRC/
+
+env:
+  global:
+
+branches:
+  only:
+    - master
+
+matrix:
+  fast_finish: true
+  allow_failures:
+    - env: OPTIONAL=true
+  include:
+    - os: linux
+      language: c
+      compiler: clang
+      env: TESTING=doctest
+      addons:
+        apt:
+          packages:
+            - xvfb
+      before_script:
+        - ./configure
+        - make -j4
+    - os: osx
+      language: c
+      compiler: clang
+      # Testing under macOS is optional
+      env: OPTIONAL=true
+      before_install:
+        - export PATH=$(brew --prefix)/bin:$(brew --prefix)/sbin:$PATH
+          fi
+before_script:
+  - ./configure
+  - make -j4 regen-all
+  - changes=`git status --porcelain`
+  - make -j4
