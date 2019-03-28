@@ -1,6 +1,8 @@
 KAPIs
 -----
 
+[![Build Status](https://travis-ci.org/tapaswenipathak/KAPIs.svg?branch=master)](https://travis-ci.org/tapaswenipathak/KAPIs.svg?branch=master)
+
 Kernel APIs are how you would interact with the kernel. Kernel APIs in short are called
 KAPIs. From memory manipulation, devices, clock, firmware, hardware, IPC(inter process
 communication), all inside kernel are implemented using KAPIs.
