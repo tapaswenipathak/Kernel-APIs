@@ -1,0 +1,17 @@
+.\" Manpage for list_for_each_prev.
+.\" Contact tapaswenipathak@gmail.com to correct errors or typos.
+.TH man 31 "April '19" "1.0" "list_for_each_prev man page"
+.SH NAME
+list_for_each_prev \- Kernel API Doubly Linked Lists
+.SH SYNOPSIS
+list_for_each_prev - continue
+.SH DESCRIPTION
+This iterates over a list backwards.
+.SH OPTIONS
+This takes pointers of list_head types and type of the struct this is part of (pos (type of list_head), member (type of list_hea)).
+.SH SEE ALSO
+list*
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Tapasweni Pathak (tapaswenipathak@gmail.com)

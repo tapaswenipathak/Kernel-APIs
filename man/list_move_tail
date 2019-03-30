@@ -1,0 +1,17 @@
+.\" Manpage for list_move_tail.
+.\" Contact tapaswenipathak@gmail.com to correct errors or typos.
+.TH man 18 "April '19" "1.0" "list_move_tail man page"
+.SH NAME
+list_move_tail \- Kernel API Doubly Linked Lists
+.SH SYNOPSIS
+list_move_tail - continue
+.SH DESCRIPTION
+tests whether list is the last entry in list head
+.SH OPTIONS
+This takes pointers of list_head types (list and head).
+.SH SEE ALSO
+list*
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Tapasweni Pathak (tapaswenipathak@gmail.com)

@@ -1,0 +1,34 @@
+.\" Manpage for list_for_each_entry_from
+." Contact tapaswenipathak@gmail.com to correct errors or typos.
+.TH man 42 "April '19" "1.0"  list_for_each_entry_from  man page
+.SH NAME
+list_for_each_entry_from \- Kernel API for Doubly Linked Lists
+.SH SYNOPSIS
+list_for_each_entry_from - continue
+.SH DESCRIPTION
+This iterates over list of given type from the current point
+.SH OPTIONS
+This has function parameters. This takes type of loop ptr(pos), head of the list(head) and member (the list_head within the struct)
+.SH SEE ALSO
+list_for_each_entry_from + *
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Tapasweni Pathak (tapaswenipathak@gmail.com)
+.\" Manpage for list_for_each_entry_from
+." Contact tapaswenipathak@gmail.com to correct errors or typos.
+.TH man 46 "April '19" "1.0"  list_for_each_entry_from  man page
+.SH NAME
+list_for_each_entry_from \- Kernel API Doubly Linked Lists
+.SH SYNOPSIS
+list_for_each_entry_from - continue
+.SH DESCRIPTION
+This iterates over list of given type from the current point
+.SH OPTIONS
+This has function parameters. The type of ptr loop, the head of the list and name of the list head within the struct
+.SH SEE ALSO
+list_for_each_entry_from + *
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Tapasweni Pathak (tapaswenipathak@gmail.com)

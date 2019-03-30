@@ -1,6 +1,6 @@
 .\" Manpage for simple_strtol.
 .\" Contact tapaswenipathak@gmail.com to correct errors or typos.
-.TH man 8 "April 2017" "1.0" "simple_strtol man page"
+.TH man 7 "April '19" "1.0" "simple_strtol man page"
 .SH NAME
 simple_strtol \- Kernel string APIs
 .SH SYNOPSIS

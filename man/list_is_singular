@@ -1,0 +1,17 @@
+.\" Manpage for list_is_singluar.
+.\" Contact tapaswenipathak@gmail.com to correct errors or typos.
+.TH man 16 "April '19" "1.0" "list_is_singluar man page"
+.SH NAME
+list_is_singluar \- Kernel API Doubly Linked Lists
+.SH SYNOPSIS
+list_is_singluar - continue
+.SH DESCRIPTION
+tests whether a list has just one entry.
+.SH OPTIONS
+This takes pointers of list_head types (head).
+.SH SEE ALSO
+list*
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Tapasweni Pathak (tapaswenipathak@gmail.com)

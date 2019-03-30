@@ -1,0 +1,17 @@
+.\" Manpage for list_move.
+.\" Contact tapaswenipathak@gmail.com to correct errors or typos.
+.TH man 19 "April '19" "1.0" "list_move man page"
+.SH NAME
+list_move \- Kernel API Doubly Linked Lists
+.SH SYNOPSIS
+list_move - continue
+.SH DESCRIPTION
+tests whether a list is empty
+.SH OPTIONS
+This takes pointers of list_head types (head).
+.SH SEE ALSO
+list*
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Tapasweni Pathak (tapaswenipathak@gmail.com)

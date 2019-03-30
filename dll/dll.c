@@ -8,10 +8,23 @@ struct foo {
 	struct list_head list_member;
 };
 
-void list_add(struct list_head *new, struct_list *head)
+void list_add(struct list_head *new, struct_list *head);
+
+void add_node(int arg, struct list_head *head)
 {
-	__list_add
+    struct foo *fooPtr = (struct foo *)malloc(sizeof(struct foo));
+    assert(fooPtr != NULL);
+
+    fooPtr->info = arg;
+    INIT_LIST_HEAD(&fooPtr->list_member);
+    list_add(&fooPtr->list_member, head);
 }
+
+void list_add_tail(struct list_head *new, struct list_head *head)
+{
+
+}
+
 void list_add_tail(struct list_head *new, struct list_head *head);
 void __list_del_entry(struct list_head *entry);
 void list_replace(struct list_head *old, struct list_head *new);

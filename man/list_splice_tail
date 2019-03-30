@@ -1,0 +1,17 @@
+.\" Manpage for list_splice_tail.
+.\" Contact tapaswenipathak@gmail.com to correct errors or typos.
+.TH man 22 "April '19" "1.0" "list_splice_tail man page"
+.SH NAME
+list_splice_tail \- Kernel API Doubly Linked Lists
+.SH SYNOPSIS
+list_splice_tail - continue
+.SH DESCRIPTION
+join two lists, each list being a queue
+.SH OPTIONS
+This takes pointers of list_head types (list, head).
+.SH SEE ALSO
+list*
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Tapasweni Pathak (tapaswenipathak@gmail.com)

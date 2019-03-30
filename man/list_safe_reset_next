@@ -1,0 +1,17 @@
+.\" Manpage for list_safe_reset_next
+." Contact tapaswenipathak@gmail.com to correct errors or typos.
+.TH man 49 "April '19" "1.0"  list_safe_reset_next  man page
+.SH NAME
+list_safe_reset_next \- Kernel API Doubly Linked Lists
+.SH SYNOPSIS
+list_safe_reset_next - continue
+.SH DESCRIPTION
+This resets a stale list_for_each_entry_safe loop
+.SH OPTIONS
+This has function parameters. loop ptr (pos) used in the list_for_each_entry_safe loop, n is the store in list_for_each_entry_safe and member is the name of the list_head within the struct
+.SH SEE ALSO
+list_safe_reset_next + *
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Tapasweni Pathak (tapaswenipathak@gmail.com)

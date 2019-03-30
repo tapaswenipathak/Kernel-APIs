@@ -1,0 +1,17 @@
+.\" Manpage for list_next_entry.
+.\" Contact tapaswenipathak@gmail.com to correct errors or typos.
+.TH man 29 "April '19" "1.0" "list_next_entry man page"
+.SH NAME
+list_next_entry \- Kernel API Doubly Linked Lists
+.SH SYNOPSIS
+list_next_entry - continue
+.SH DESCRIPTION
+This gets the next element in list.
+.SH OPTIONS
+This takes pointers of list_head types and type of the struct this is part of (pos (list_head ptr), member (type of list_head)).
+.SH SEE ALSO
+list*
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Tapasweni Pathak (tapaswenipathak@gmail.com)

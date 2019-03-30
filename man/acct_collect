@@ -1,0 +1,24 @@
+.\" Manpage for acct_collect.
+.\" Contact tapaswenipathak@gmail.com to correct errors or typos.
+.TH man 8 "April 2017" "1.0" "acct_collect man page"
+.SH NAME
+acct_collect \- Kernel Accounting APIs
+.SH SYNOPSIS
+acct_collect - continue
+.SH DESCRIPTION
+collect accounting information into pacct_struct
+struct pacct_struct {
+  int     ac_flag;
+  long      ac_exitcode;
+  unsigned long   ac_mem;
+  u64     ac_utime, ac_stime;
+  unsigned long   ac_minflt, ac_majflt;
+};
+.SH OPTIONS
+This has function parameters.
+.SH SEE ALSO
+list*
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Tapasweni Pathak (tapaswenipathak@gmail.com)

@@ -1,0 +1,18 @@
+.\" Manpage for audit_log_start.
+.\" Contact tapaswenipathak@gmail.com to correct errors or typos.
+.TH man 8 "April 2017" "1.0" "audit_log_start man page"
+.SH NAME
+audit_log_start \- Kernel Audit Interfaces
+.SH SYNOPSIS
+audit_log_start - continue
+.SH DESCRIPTION
+This is an audit buffer for a syscall. If the task has a syscall then the syscall is
+added as auditable and an audit record will be return at syscall.
+.SH OPTIONS
+This has function parameters.
+.SH SEE ALSO
+list*
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Tapasweni Pathak (tapaswenipathak@gmail.com)

@@ -1,6 +1,6 @@
 .\" Manpage for snprintf.
 .\" Contact tapaswenipathak@gmail.com to correct errors or typos.
-.TH man 8 "April 2017" "1.0" "snprintf man page"
+.TH man 11 "April '19" "1.0" "snprintf man page"
 .SH NAME
 snprintf \- Kernel string APIs
 .SH SYNOPSIS

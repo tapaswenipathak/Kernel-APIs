@@ -27,3 +27,15 @@ void *memdup_user(const void __user *src, size_t len);
 void *memdup_user_nul(const void __user *src, size_t len);
 int get_user_pages_fast(ul start, int nr_pages, int write, struct page **pages);
 
+
+int main(int argc, char *argv[])
+{
+  int *a;
+
+  a = kmalloc (size of (*a), GFP_KERNEL);
+
+  printf("Address allocated using malloc (GFP_KERNEL) %u\n", a);
+
+  a = kmalloc_array(argv[1], sizeof(uint8_t), GFP_KERNEL | __GFP_NOWARN);
+
+}

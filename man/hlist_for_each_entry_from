@@ -1,0 +1,17 @@
+.\" Manpage for hlist_for_each_entry_from
+." Contact tapaswenipathak@gmail.com to correct errors or typos.
+.TH man 51 "April '19" "1.0"  hlist_for_each_entry_from  man page
+.SH NAME
+hlist_for_each_entry_from \- Kernel API Doubly Linked Lists
+.SH SYNOPSIS
+hlist_for_each_entry_from - continue
+.SH DESCRIPTION
+This iterates over a hlist continuing from current point
+.SH OPTIONS
+This has function parameters. This takes loop ptr and name of the hlist_node within the struct
+.SH SEE ALSO
+hlist_for_each_entry_from + *
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Tapasweni Pathak (tapaswenipathak@gmail.com)
