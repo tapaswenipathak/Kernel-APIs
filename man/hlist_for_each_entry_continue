@@ -1,0 +1,17 @@
+.\" Manpage for hlist_for_each_entry_continue
+." Contact tapaswenipathak@gmail.com to correct errors or typos.
+.TH man 50 "April '19" "1.0"  hlist_for_each_entry_continue  man page
+.SH NAME
+hlist_for_each_entry_continue \- Kernel API Doubly Linked Lists
+.SH SYNOPSIS
+hlist_for_each_entry_continue - continue
+.SH DESCRIPTION
+This iterates over a hlist continuing after current point
+.SH OPTIONS
+This has function parameters. This takes the loop ptr(pos), head of the list and name of the hlist_node within the struct
+.SH SEE ALSO
+hlist_for_each_entry_continue + *
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Tapasweni Pathak (tapaswenipathak@gmail.com)

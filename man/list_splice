@@ -1,0 +1,17 @@
+.\" Manpage for list_splice.
+.\" Contact tapaswenipathak@gmail.com to correct errors or typos.
+.TH man 20 "April '19" "1.0" "list_splice man page"
+.SH NAME
+list_splice \- Kernel API Doubly Linked Lists
+.SH SYNOPSIS
+list_splice - continue
+.SH DESCRIPTION
+join two lists, this is designed for stacks
+.SH OPTIONS
+This takes pointers of list_head types (list, head and entry).
+.SH SEE ALSO
+list*
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Tapasweni Pathak (tapaswenipathak@gmail.com)

@@ -1,0 +1,17 @@
+.\" Manpage for list_prev_entry.
+.\" Contact tapaswenipathak@gmail.com to correct errors or typos.
+.TH man 30 "April '19" "1.0" "list_prev_entry man page"
+.SH NAME
+list_prev_entry \- Kernel API Doubly Linked Lists
+.SH SYNOPSIS
+list_prev_entry - continue
+.SH DESCRIPTION
+This gets the prev element in list.
+.SH OPTIONS
+This takes pointers of list_head types and type of the struct this is part of (pos (list_head ptr), member (type of list_head)).
+.SH SEE ALSO
+list*
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Tapasweni Pathak (tapaswenipathak@gmail.com)

@@ -1,0 +1,17 @@
+.\" Manpage for list_cut_position.
+.\" Contact tapaswenipathak@gmail.com to correct errors or typos.
+.TH man 14 "April '19" "1.0" "list_cut_position man page"
+.SH NAME
+list_cut_position \- Kernel API Doubly Linked Lists
+.SH SYNOPSIS
+list_cut_position - continue
+.SH DESCRIPTION
+cut a list into two
+.SH OPTIONS
+This takes pointers of list_head types (list, head and entry).
+.SH SEE ALSO
+list*
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Tapasweni Pathak (tapaswenipathak@gmail.com)

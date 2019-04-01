@@ -1,0 +1,17 @@
+.\" Manpage for hlist_for_each_entry
+." Contact tapaswenipathak@gmail.com to correct errors or typos.
+.TH man 49 "April '19" "1.0"  hlist_for_each_entry  man page
+.SH NAME
+hlist_for_each_entry \- Kernel API Doubly Linked Lists
+.SH SYNOPSIS
+hlist_for_each_entry - continue
+.SH DESCRIPTION
+iterate over list of given type
+.SH OPTIONS
+This has function parameters. pos (loop ptr), head of the list and member of the hlist_node within the struct
+.SH SEE ALSO
+hlist_for_each_entry + *
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Tapasweni Pathak (tapaswenipathak@gmail.com)

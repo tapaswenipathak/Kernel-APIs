@@ -1,0 +1,17 @@
+.\" Manpage for list_first_entry_or_null.
+.\" Contact tapaswenipathak@gmail.com to correct errors or typos.
+.TH man 27 "April '19" "1.0" "list_first_entry_or_null man page"
+.SH NAME
+list_first_entry_or_null \- Kernel API Doubly Linked Lists
+.SH SYNOPSIS
+list_first_entry_or_null - continue
+.SH DESCRIPTION
+This gets the first element from a list.
+.SH OPTIONS
+This takes pointers of list_head types and type of the struct this is part of (ptr (list_head ptr), type (type of struct) and member (name of the list_head within the struct)).
+.SH SEE ALSO
+list*
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Tapasweni Pathak (tapaswenipathak@gmail.com)

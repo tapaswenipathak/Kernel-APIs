@@ -1,0 +1,17 @@
+.\" Manpage for list_for_each_entry_safe_from
+." Contact tapaswenipathak@gmail.com to correct errors or typos.
+.TH man 48 "April '19" "1.0"  list_for_each_entry_safe_from  man page
+.SH NAME
+list_for_each_entry_safe_from \- Kernel API Doubly Linked Lists
+.SH SYNOPSIS
+list_for_each_entry_safe_from - continue
+.SH DESCRIPTION
+This iterates over list from current point safe against removal
+.SH OPTIONS
+This has function parameters. This takes pos(loop ptr), n to be used as store, head of the list and member (list_head within the struct
+.SH SEE ALSO
+list_for_each_entry_safe_from + *
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Tapasweni Pathak (tapaswenipathak@gmail.com)

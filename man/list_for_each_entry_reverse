@@ -1,0 +1,17 @@
+.\" Manpage for list_for_each_entry_reverse
+." Contact tapaswenipathak@gmail.com to correct errors or typos.
+.TH man 36 "April '19" "1.0"  list_for_each_entry_reverse  man page
+.SH NAME
+list_for_each_entry_reverse \- Kernel API Doubly Linked Lists
+.SH SYNOPSIS
+list_for_each_entry_reverse - continue
+.SH DESCRIPTION
+This iterates backwards over list of given type
+.SH OPTIONS
+This has function parameters. This takes arguments as pos(loop ptr type), head of the list and member of the list_head within the struct
+.SH SEE ALSO
+list_for_each_entry_reverse + *
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Tapasweni Pathak (tapaswenipathak@gmail.com)

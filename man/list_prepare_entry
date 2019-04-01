@@ -1,0 +1,17 @@
+.\" Manpage for list_prepare_entry
+." Contact tapaswenipathak@gmail.com to correct errors or typos.
+.TH man "April '19" "1.0"  list_prepare_entry  man page
+.SH NAME
+list_prepare_entry \- Kernel
+.SH SYNOPSIS
+list_prepare_entry - continue
+.SH DESCRIPTION
+This prepares a pos entry for use in list_for_each_entry_continue
+.SH OPTIONS
+This has function parameters. This takes pos as a start point, head of the list(head) and the name of the list_head within the struct(member)
+.SH SEE ALSO
+list_prepare_entry + *
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Tapasweni Pathak (tapaswenipathak@gmail.com)

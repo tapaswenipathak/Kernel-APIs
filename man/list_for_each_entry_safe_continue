@@ -1,0 +1,17 @@
+.\" Manpage for list_for_each_entry_safe_continue
+." Contact tapaswenipathak@gmail.com to correct errors or typos.
+.TH man 48 "April '19" "1.0"  list_for_each_entry_safe_continue  man page
+.SH NAME
+list_for_each_entry_safe_continue \- Kernel API Doubly Linked Lists
+.SH SYNOPSIS
+list_for_each_entry_safe_continue - continue
+.SH DESCRIPTION
+This continues list iteration safe against removal
+.SH OPTIONS
+This has function parameters. This thakes pos, n, head of the list and name of the list_head within the struct
+.SH SEE ALSO
+list_for_each_entry_safe_continue + *
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Tapasweni Pathak (tapaswenipathak@gmail.com)

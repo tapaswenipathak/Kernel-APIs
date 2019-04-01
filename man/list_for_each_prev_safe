@@ -1,0 +1,17 @@
+.\" Manpage for list_for_each_prev_safe.
+.\" Contact tapaswenipathak@gmail.com to correct errors or typos.
+.TH man 33 "April '19" "1.0" "list_for_each_prev_safe man page"
+.SH NAME
+list_for_each_prev_safe \- Kernel API Doubly Linked Lists
+.SH SYNOPSIS
+list_for_each_prev_safe - continue
+.SH DESCRIPTION
+This iterates over a list backwards safe against removal of list entry
+.SH OPTIONS
+This takes pointers of list_head types and type of the struct this is part of (pos (type of list_head), n (struct of type list_head to use as storage) head (type of list_head)).
+.SH SEE ALSO
+list*
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Tapasweni Pathak (tapaswenipathak@gmail.com)

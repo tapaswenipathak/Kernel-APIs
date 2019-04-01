@@ -1,0 +1,34 @@
+.\" Manpage for list_for_each_entry_continue
+." Contact tapaswenipathak@gmail.com to correct errors or typos.
+.TH man "April '19" "1.0"  list_for_each_entry_continue  man page
+.SH NAME
+list_for_each_entry_continue \- Kernel API for Doubly Linked Lists
+.SH SYNOPSIS
+list_for_each_entry_continue - continue
+.SH DESCRIPTION
+continue iteration over list of given type
+.SH OPTIONS
+This has function parameters. type of the loop (pos), head of the list(head) and the name of the list head within the struct (member)
+.SH SEE ALSO
+list_for_each_entry_continue + *
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Tapasweni Pathak (tapaswenipathak@gmail.com)
+.\" Manpage for list_for_each_entry_continue
+." Contact tapaswenipathak@gmail.com to correct errors or typos.
+.TH man 43 "April '19" "1.0"  list_for_each_entry_continue  man page
+.SH NAME
+list_for_each_entry_continue \- Kernel API Doubly Linked Lists
+.SH SYNOPSIS
+list_for_each_entry_continue - continue
+.SH DESCRIPTION
+This continues iteration over list of given type
+.SH OPTIONS
+This has function parameters. This takes pos, head of the list and name of the list_head within the struct
+.SH SEE ALSO
+list_for_each_entry_continue + *
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Tapasweni Pathak (tapaswenipathak@gmail.com)
