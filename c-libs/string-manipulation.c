@@ -43,3 +43,29 @@ char *strnstr(cc *s1, cc *s2, size_t len);
 void *memchr(const void *s, int c, size_t n);
 void *memchr_inv(cv *start, int c, size_t bytes);
 char *strreplace(char *s, char old, char new);
+
+int main(int argc, char *argv[])
+{
+	if (argc < 2){
+		printf("%s", "Please enter more than strings and count");
+	}
+
+	if (strncasecmp(argv[1], argv[2], argv[3])){
+		printf("Executing strncasecmp %d", res_strncasecmp_val);
+	}
+
+	res_strreplace_val = strreplace(argv[1], argv[2]);
+	printf("Executing strreplace %d", res_strreplace_val);
+
+	res_memchar_inv_val = memchr_inv(argv[1], argv[2]);
+	printf("Executing memchar_inv %d", res_memchar_inv_val);
+
+	res_strnstr_val = strnstr_val(argv[1], argv[2]);
+	printf("Executing strnsrt val %d", res_strnstr_val);
+
+	res_strstr_val = strstr(argv[1], argv[2]);
+	printf("Executing strstr %d", res_strstr);
+
+
+	return 0;
+}
