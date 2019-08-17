@@ -2,8 +2,8 @@ DIR_SRC:=accounting/ audit-interfaces/ blk-devices/ c-libs/ char-devices/ clock/
 memory-management/ misc-devices/ relay-interface/ security/
 DIR_OBJ:=obj/
 
-#CXX ?= g++
-CC ?= gcc
+# Updating clang compiler
+CC ?= clang++
 
 #SRC_EXT:=cpp
 SRC_EXT:=c
