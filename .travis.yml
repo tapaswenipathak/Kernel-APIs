@@ -1,6 +1,9 @@
 language: c
 dist: xenial
 
+compiler:
+  clang
+
 branches:
   only:
     - master
