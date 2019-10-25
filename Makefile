@@ -1,14 +1,13 @@
-DIR_SRC:=accounting/ audit-interfaces/ blk-devices/ c-libs/ char-devices/ clock/ dll/ firmware-interfaces/ hardware-interfaces/ kernel-ipc/ kernel-libs/ kfifo/
-memory-management/ misc-devices/ relay-interface/ security/
+DIR_SRC:=accounting/ audit-interfaces/ blk-devices/ c-libs/ char-devices/ clock/ dll/ firmware-interfaces/   hardware-interfaces/ kernel-ipc/ kernel-libs/ kfifo/ memory-management/ misc-devices/ relay-interface/ security/
 DIR_OBJ:=obj/
 
 #CXX ?= g++
-CC ?= gcc
+CC ?= clang
 
 #SRC_EXT:=cpp
 SRC_EXT:=c
 
-COMPILE_FLAGS = -std=gcc -Wall -Wextra -02 -03 -06
+COMPILE_FLAGS = -std=clang -Wall -Wextra -02 -03 -06
 
 search-dir-all=$(strip $(call search-dir,$1) $(foreach DIR,$(call search-dir,$1),$(call search-dir-all,$(DIR))))
 
