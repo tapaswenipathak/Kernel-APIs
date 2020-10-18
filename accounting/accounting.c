@@ -3,15 +3,15 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define unsigned long long ull
-#define unsigned long ul
-#define unsigned int ui
-#define long long ll
+typedef unsigned long long ull;
+typedef unsigned long ul;
+typedef unsigned int ui;
+typedef long long ll;
 
 /*
- * \def cc defined a short form of const char type
+ * \typedef cc defined a short form of const char type
  */
-#define const char cc
+typedef const char cc;
 
 
 /*
